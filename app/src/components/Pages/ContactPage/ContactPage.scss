@@ -108,57 +108,7 @@ textarea {
 
   padding: 25px;
 
-  .form-input-item {
-    padding: 8px 12px;
-
-    background: #ffffff;
-    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-
-    transition: all 0.3s ease-in-out;
-    
+  .form-input-item {    
     margin-bottom: 25px;
-  }
-
-  .focused {
-    box-shadow: inset 0px 0px 4px #80d8ff;
-  }
-
-  input,
-  textarea {
-    font-size: 23px;
-    padding: 0.8vh 2px;
-
-    &::placeholder{
-      font-style: italic;
-      opacity: 0.5;
-    }
-  }
-
-  textarea {
-    height: 220px;
-  }
-
-  label {
-    text-transform: uppercase;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-
-    color: #f45b69;
-  }
-
-  input[type="submit"] {
-    background-color: #f45b69;
-    color: white;
-    border-radius: 3px;
-    text-transform: uppercase;
-    padding: 10px;
-
-    &:focus {
-      outline: none;
-      box-shadow: 0px 0px 4px #5fcfff;
-    }
   }
 }

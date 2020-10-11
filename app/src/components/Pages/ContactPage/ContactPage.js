@@ -1,23 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ContactPage.scss';
 
 import linkedin from './assets/icons/LinkedIn.svg';
 import Email from './assets/icons/Email.svg';
+import { Input, TextArea, Button } from "../../Form";
 
 
 function ContactPage() {
-  const [focus, setFocus] = useState("");
-
-  // sets the current focused input
-  function focusEvent(id) {
-    return () => setFocus(id);
-  }
-
-  // add "focused" class to the focused div
-  function className(id) {
-    return "form-input-item " + (id === focus ? "focused" : "");
-  }
-
   return (
     <div className="contact-us__page">
       <form className="container">
@@ -31,22 +20,16 @@ function ContactPage() {
         </div>
 
         <div className="form-card__info box form-card">
-          <div className={className("full_name")}><label htmlFor="fname">full name</label><br />
-            <input onFocus={focusEvent("full_name")} type="text" id="full_name" name="fullName" /></div>
-          <div className={className("email")}><label htmlFor="lname">email</label><br />
-            <input onFocus={focusEvent("email")} type="email" id="email" name="email" placeholder="you@example.com" /><br /></div>
-          <div className={className("phone_number")}><label htmlFor="phone">phone number</label><br />
-            <input onFocus={focusEvent("phone_number")} type="tel" id="phone_number" name="phoneNumber" pattern="[0-9]{10}" placeholder="+(000) 000-0000"></input><br /></div>
-          <div className={className("hotel_name")}><label htmlFor="lname">name of hotel</label><br />
-            <input onFocus={focusEvent("hotel_name")} type="text" id="hotel_name" name="hotelName" /><br /></div>
-          <div className={className("hotel_position")}><label htmlFor="lname">hotel position</label><br />
-            <input onFocus={focusEvent("hotel_position")} type="text" id="hotel_position" name="hotelPosition" /><br /></div>
+          <Input label="full name" type="text" id="full_name" name="fullName" />
+          <Input label="email" type="email" id="email" name="email" placeholder="you@example.com" />
+          <Input label="phone number" type="tel" id="phone_number" name="phoneNumber" pattern="[0-9]{10}" placeholder="+(000) 000-0000" />
+          <Input label="name of hotel" type="text" id="hotel_name" name="hotelName" />
+          <Input label="hotel position" type="text" id="hotel_position" name="hotelPosition" />
         </div>
 
         <div className="form-card__message box form-card">
-          <div className={className("message")}><label htmlFor="lname">message</label><br />
-            <textarea onFocus={focusEvent("message")} id="message" name="message" /><br /></div>
-          <input onFocus={focusEvent("submit")} id="submit" type="submit" value="Submit" />
+          <TextArea label="message" id="message" name="message" />
+          <Button id="submit" value="Submit" />
         </div>
       </form>
     </div>
