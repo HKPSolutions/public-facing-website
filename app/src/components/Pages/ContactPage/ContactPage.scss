@@ -30,16 +30,16 @@
     margin: auto;
 
     .box {
-      flex: 1 1 220px;
+      flex: 1 1 240px;
       margin: 50px;
     }
 
     .form-card__info {
-      height: calc(min(70vh, 600px));
+      height: min-content;
     }
 
     .form-card__message {
-      height: calc(min(50vh, 380px));
+      height: min-content;
     }
   }
 }
@@ -116,6 +116,8 @@ textarea {
     border-radius: 3px;
 
     transition: all 0.3s ease-in-out;
+    
+    margin-bottom: 25px;
   }
 
   .focused {
@@ -124,9 +126,8 @@ textarea {
 
   input,
   textarea {
-    font-size: 1.5vw;
-    line-height: 2vw;
-    padding: 2px;
+    font-size: 23px;
+    padding: 0.8vh 2px;
 
     &::placeholder{
       font-style: italic;
@@ -143,8 +144,7 @@ textarea {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 0.9vw;
-    line-height: 1vw;
+    font-size: 15px;
 
     color: #f45b69;
   }
