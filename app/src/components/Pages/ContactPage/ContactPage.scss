@@ -10,15 +10,15 @@
 .contact-us__page {
   background-image: url("./assets/bg/bg.svg");
   background-image: url("./assets/bg/bg.svg"),
-    linear-gradient(to bottom, transparent 90vh, #120309 90vh);
+    linear-gradient(to bottom, transparent 70vw, #120309 70vw);
   background-size: 100vw auto;
-  background-position: top calc(min(238px, 20vh)) right 0px;
+  background-position: top 238px right 0px;
   background-repeat: no-repeat;
 }
 
 // main layout
 .contact-us__page {
-  width: 100vw;
+  width: 100%;
   min-height: calc(min(1080px, 100vh));
 
   form {
@@ -26,12 +26,11 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    width: calc(100% - 50px * 2);
     margin: auto;
 
     .box {
-      flex: 1 1 240px;
-      margin: 50px;
+      flex: 0 1 300px;
+      margin: 25px;
     }
 
     .form-card__info {
@@ -70,16 +69,14 @@
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 4.2vw;
-    line-height: 5.2vw;
+    font-size: 55px;
   }
 
   #{&}__decription {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 2.2vw;
-    line-height: 2.5vw;
+    font-size: 20px;
 
     padding-bottom: 35px;
   }
