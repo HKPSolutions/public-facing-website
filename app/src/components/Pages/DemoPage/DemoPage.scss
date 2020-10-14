@@ -10,7 +10,7 @@
 .demo__page {
   background-image: url("./assets/bg.svg");
   background-image: url("./assets/bg.svg"),
-    linear-gradient(to bottom, transparent 600px, #120309 600px);
+    linear-gradient(to bottom, transparent 60vw, #120309 60vw);
   background-size: 100vw auto;
   background-position: top 400px right 0px;
   background-repeat: no-repeat;
@@ -28,6 +28,22 @@
     flex: 0 1 400px;
     margin: 50px;
     height: min-content;
+  }
+
+  @media (max-width: 600px) {
+    .box {
+      flex: 1 1 300px;
+      margin: 5px;
+    }
+
+    .demo__page__message{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      margin: 0px 20px 50px 20px;
+    }
   }
 
   h1{
