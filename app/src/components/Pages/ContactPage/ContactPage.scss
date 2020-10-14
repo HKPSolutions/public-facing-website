@@ -33,6 +33,19 @@
       margin: 25px;
     }
 
+    @media (max-width: 1200px) {
+      .box {
+        flex: 1 1 300px;
+        margin: 10px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .box {
+        margin: 2px;
+      }
+    }
+
     .form-card__info {
       height: min-content;
     }
@@ -82,6 +95,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .contact-us__message {
+    padding: 50px;
+  }
+}
+
 //form
 button,
 input,
@@ -105,7 +124,7 @@ textarea {
 
   padding: 25px;
 
-  .form-input-item {    
+  .form-input-item {
     margin-bottom: 25px;
   }
 }
