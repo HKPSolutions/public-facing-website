@@ -44,6 +44,15 @@
       .box {
         margin: 2px;
       }
+
+      .contact-us__message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        margin: 0px 20px 50px 20px;
+      }
     }
 
     .form-card__info {
