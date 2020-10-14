@@ -5,7 +5,9 @@ import linkedin from './assets/icons/LinkedIn.svg';
 import Email from './assets/icons/Email.svg';
 import { Input, TextArea, Button } from "../../Form";
 
-
+/**
+ *  Contact page component with mobile version
+ */
 function ContactPage() {
   return (
     <div className="contact-us__page">

@@ -3,6 +3,9 @@ import './DemoPage.scss';
 
 import { Input, Button } from "../../Form";
 
+/**
+ *  Demo page component with mobile version
+ */
 function DemoPage() {
   return (
     <div className="demo__page">
