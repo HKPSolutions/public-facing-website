@@ -1,14 +1,10 @@
 import React from 'react';
 import './Footer.scss';
 
-function App() {
+function Footer() {
   return (
-    <div className="App">
-        <p>
-          HKP Solutions
-        </p>
-    </div>
+    <div></div>
   );
 }
 
-export default App;
+export default Footer;
