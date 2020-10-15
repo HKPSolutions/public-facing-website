@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import IntroSection from "../Components/Home/IntroSection";
-import FeaturesPitch from "../Components/Home/FeaturesPitch";
-import AnalyticsPitch from "../Components/Home/AnalyticsPitch";
-import PaymentPitch from "../Components/Home/PaymentPitch";
+import IntroSection from "../components/Home/IntroSection";
+import FeaturesPitch from "../components/Home/FeaturesPitch";
+import AnalyticsPitch from "../components/Home/AnalyticsPitch";
+import PaymentPitch from "../components/Home/PaymentPitch";
 
 class HomeView extends Component {
     render() {
