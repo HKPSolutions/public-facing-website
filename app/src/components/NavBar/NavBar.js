@@ -1,14 +1,26 @@
 import React from 'react';
-import './NavBar.scss';
+import './Navbar.css';//put some styling in APP.css
+//this created the hyperlinks.
+function Navbar(){
+    return(
 
-function App() {
-  return (
-    <div className="App">
-        <p>
-          HKP Solutions
-        </p>
+    <div className= "Hello">
+        
+        
+        
+        <a href="#news">App</a>  
+        <a href="#contact">Demo</a>
+        <a href="#contact">Contact</a>
+
+    
+
     </div>
-  );
+
+    );
+
+
+
+
 }
 
-export default App;
+export default Navbar;
