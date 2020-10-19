@@ -1,0 +1,243 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+.intro-container {
+	position: relative;
+	min-height: 100vh;
+	background-image: url('./static/HeroSection.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.intro {
+	padding: 0 calc(100vw / 12);
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.black {
+	color: white;
+	background-color: black;
+}
+.pitch-titles {
+	margin: 0px auto;
+	text-align: center;
+	max-width: 980px;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+.analytics-container {
+	color: black;
+	background-color: black;
+	padding: 20vh 0;
+	background-image: url('./static/Parallel.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.flex-container {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+.features {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.feature {
+	padding: 30px 20px;
+	max-width: min(542px, 100vw);
+}
+.feature-description {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+}
+.intro-header {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	background: white;
+}
+.intro-desc {
+	font-family: 'Roboto', sans-serif;
+	font-weight: light;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	font-weight: 200;
+	background: white;
+}
+.intro-button {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background: #F45B69;
+	color: white;
+	border: none;
+	font-size: 15px;
+	padding: 10px;
+	margin-right: 10px;
+	&:hover {
+		background: rgb(161, 61, 69);
+		color: white;
+	}
+}
+.circular_point_center {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 20px;
+	transform: translate(-50%, -50%);
+}
+.cirStyle {
+	margin: 10px auto;
+	position: relative;
+	background: #689AFA;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+@media screen and (min-device-width: 360px) {
+	.intro-header {
+		font-family: 'Roboto', sans-serif;
+		font-size: 40px;
+		font-weight: 600;
+		background: white;
+	}
+	.intro-desc {
+		font-family: 'Roboto', sans-serif;
+		font-weight: light;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 25px;
+		font-weight: 200;
+		background: white;
+	}
+	.intro-button {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		background: #F45B69;
+		color: white;
+		border: none;
+		font-size: 18px;
+		padding: 10px;
+		margin-right: 10px;
+	}
+}
+@media screen and (min-device-width: 1000px) {
+	.intro-container {
+		position: relative;
+		min-height: 100vh;
+		background-image: url('./static/HeroSection.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.intro {
+		max-width: 704px;
+		padding: 0 calc(100vw / 12);
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.black {
+		color: white;
+		background-color: black;
+	}
+	.analytics-padding {
+		padding: 408px calc(100vw / 12);
+	}
+	.pitch-container {
+		padding: 110px calc(100vw / 12);
+	}
+	.pitch-titles {
+		margin: 0px auto;
+		padding-top: 55px;
+		padding-bottom: 110px;
+		text-align: center;
+		max-width: 980px;
+		font-family: 'Roboto', sans-serif;
+		line-height: 56.25px;
+		font-size: 48px;
+		font-weight: 500;
+	}
+	.analytics-container {
+		color: black;
+		background-color: black;
+		background-image: url('./static/Parallel.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.flex-container {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.features {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+	.feature {
+		max-width: 542px;
+	}
+	.feature-description {
+		font-family: 'Roboto', sans-serif;
+		line-height: 42.19px;
+		font-size: 36px;
+		font-weight: 300;
+		margin: 50px auto;
+		text-align: center;
+	}
+	.intro-header {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 600;
+		min-height: 227px;
+		line-height: 75px;
+		font-size: 64px;
+		background: white;
+	}
+	.intro-desc {
+		font-family: 'Roboto', sans-serif;
+		margin: 25px 0;
+		font-weight: light;
+		line-height: 42.19px;
+		font-size: 36px;
+		font-weight: 200;
+		background: white;
+	}
+	.intro-button {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		background: #F45B69;
+		color: white;
+		border: none;
+		padding: 20px;
+		margin-right: 20px;
+		&:hover {
+			background: rgb(161, 61, 69);
+			color: white;
+		}
+	}
+	.circular_point_center {
+		color: white;
+		font-size: 36px;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.cirStyle {
+		margin: 0 auto;
+		position: relative;
+		background: #689AFA;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+	}
+}
