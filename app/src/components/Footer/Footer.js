@@ -15,10 +15,10 @@ function Footer() {
       <div className="footer__nav footer__lists">
         <h2>Menu</h2>
         <ul>
-          <li><a href="!#">Home</a></li>
-          <li><a href="!#">App</a></li>
-          <li><a href="!#">Demo</a></li>
-          <li><a href="!#">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/app">App</a></li>
+          <li><a href="/demo">Demo</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div className="foooter__contact-info footer__lists">

@@ -3,17 +3,10 @@ import './Navbar.css';//put some styling in APP.css
 //this created the hyperlinks.
 function Navbar(){
     return(
-
     <div className= "Hello">
-        
-        
-        
-        <a href="#news">App</a>  
-        <a href="#contact">Demo</a>
-        <a href="#contact">Contact</a>
-
-    
-
+        <a href="/app">App</a>  
+        <a href="/demo">Demo</a>
+        <a href="/contact">Contact</a>
     </div>
 
     );

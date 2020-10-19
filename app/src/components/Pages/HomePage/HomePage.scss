@@ -1,8 +1,8 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+//@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
 .intro-container {
 	position: relative;
 	min-height: 100vh;
-	background-image: url('./static/HeroSection.svg');
+	background-image: url('./assets/HeroSection.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -29,7 +29,7 @@
 	color: black;
 	background-color: black;
 	padding: 20vh 0;
-	background-image: url('./static/Parallel.svg');
+	background-image: url('./assets/Parallel.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -43,9 +43,11 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
+
+// TODO Change min(20vw, 100vw) to correct value
 .feature {
 	padding: 30px 20px;
-	max-width: min(542px, 100vw);
+	max-width: min(20vw, 100vw);
 }
 .feature-description {
 	font-family: 'Roboto', sans-serif;
@@ -129,7 +131,7 @@
 	.intro-container {
 		position: relative;
 		min-height: 100vh;
-		background-image: url('./static/HeroSection.svg');
+		background-image: url('./assets/HeroSection.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -165,7 +167,7 @@
 	.analytics-container {
 		color: black;
 		background-color: black;
-		background-image: url('./static/Parallel.svg');
+		background-image: url('./assets/Parallel.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
