@@ -166,6 +166,10 @@ $bold: 500;
     text-align: center;
   }
 
+  .app-pg_landing_sum{
+    padding-bottom: calc(var(--ap-se-padding) / 2);
+  }
+
   .info_container_l {
     display: flex;
   }
@@ -206,6 +210,7 @@ $bold: 500;
     padding: 10px;
     border: none;
     margin-right: 20px;
+    width: fit-content;
 
     &:focus {
       outline: none;
