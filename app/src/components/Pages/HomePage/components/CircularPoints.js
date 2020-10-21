@@ -1,14 +1,4 @@
-import React, { useState, useEffect, Component } from 'react';
-
-const cirStyle = {
-    margin: "0 auto",
-    position: "relative",
-    background: "#689AFA",
-    borderRadius: "50%",
-    width: "80px",
-    height: "80px"
-}
-
+import React from 'react';
 
 function CircularPoints(props) {
     return (
