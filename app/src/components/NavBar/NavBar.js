@@ -17,11 +17,11 @@ function Navbar() {
                     <img alt="branding" src={Branding} />
                 </a>
             </div>
-            <a class={"toggle-menu " + (isMobileOpen ? " active" : "")} href="#" onClick={onClickHandler}>
+            <button class={"toggle-menu " + (isMobileOpen ? " active" : "")} onClick={onClickHandler}>
                 <i></i>
                 <i></i>
                 <i></i>
-            </a>
+            </button>
             <ul class={(isMobileOpen ? "open" : "close")}>
                 <li><a href="/app">app</a></li>
                 <li><a href="/demo">demo</a></li>
