@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+// rests
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// background
+.contact-us__page {
+  background-image: url("./assets/bg/bg.svg");
+  background-image: url("./assets/bg/bg.svg"),
+    linear-gradient(to bottom, transparent 70vw, #120309 70vw);
+  background-size: 100vw auto;
+  background-position: top 238px right 0px;
+  background-repeat: no-repeat;
+}
+
+// main layout
+.contact-us__page {
+  width: 100%;
+  min-height: calc(min(1080px, 100vh));
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: auto;
+
+    .box {
+      flex: 0 1 300px;
+      margin: 25px;
+    }
+
+    @media (max-width: 1200px) {
+      .box {
+        flex: 1 1 300px;
+        margin: 10px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .box {
+        margin: 2px;
+      }
+
+      .contact-us__message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        margin: 0px 20px 50px 20px;
+      }
+    }
+
+    .form-card__info {
+      height: min-content;
+    }
+
+    .form-card__message {
+      height: min-content;
+    }
+  }
+}
+
+// icons
+.linkedin-icon {
+  width: 29.5px;
+  height: 30px;
+
+  margin-right: 10px;
+}
+
+.email-icon {
+  width: 45.5px;
+  height: 30px;
+}
+
+// form cars
+.form-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+}
+
+// message
+.contact-us__message {
+  #{&}__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+  }
+
+  #{&}__decription {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-us__message {
+    padding: 50px;
+  }
+}
+
+//form
+button,
+input,
+textarea {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+
+  padding: 25px;
+
+  .form-input-item {
+    margin-bottom: 25px;
+  }
+}

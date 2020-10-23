@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+$background-color: #120309;
+
+//font weight
+$light: 300;
+$bold: 500;
+
+@mixin center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin bg {
+  background-color: $background-color;
+}
+
+* {
+  --fs-big: 64px;
+  --fs-medium: 48px;
+  --fs-small: 32px;
+  --fs-x-small: 18px;
+
+  --fl-circle-radius: 80px;
+
+  --se-padding: 200px;
+}
+
+.home {
+  font-family: "Roboto", sans-serif;
+  font-weight: $light;
+  font-size: var(--fs-small);
+  background-color: $background-color;
+  color: white;
+
+  overflow: hidden;
+}
+
+.cirStyle {
+  width: var(--fl-circle-radius);
+  height: var(--fl-circle-radius);
+  background-color: #689afa;
+  font-size: var(--fs-medium);
+  font-weight: $bold;
+  color: white;
+  border-radius: 100%;
+
+  @include center();
+}
+
+.features {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+
+  .feature {
+    flex: 0 1 390px;
+    text-align: center;
+    gap: 30px;
+    margin: 30px;
+    @include center();
+  }
+}
+
+.pitch-titles {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: var(--fs-medium);
+  font-weight: $bold;
+  padding-bottom: 100px;
+}
+
+.intro-container {
+  height: 900px;
+  width: 100vw;
+  background-color: white;
+  color: black;
+
+  background-image: url("./assets/StockGraph.svg");
+  background-image: url("./assets/StockGraph.svg"),
+    linear-gradient(to bottom, transparent 70vw, #120309 70vw);
+  background-size: 100% auto;
+  background-position: top 50px right 0px;
+  background-repeat: no-repeat;
+
+  .intro {
+    padding: 80px;
+    height: calc(100% - 80px * 2);
+    width: 700px;
+
+    .intro-header {
+      font-size: 3.5rem;
+      width: 70vw;
+      overflow:visible;
+      font-weight: $bold;
+      padding-bottom: 20px;
+    }
+
+    .intro-desc {
+      padding-bottom: 40px;
+      font-size: 2rem;
+      width: 40vw;
+    }
+
+    button {
+      background-color: #f45b69;
+      color: white;
+      border-radius: 3px;
+      text-transform: uppercase;
+      padding: 10px;
+      cursor: pointer;
+      
+
+      font-size: var(--fs-x-small);
+      text-transform: capitalize;
+      border: none;
+      margin-right: 20px;
+      width: fit-content;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      &:hover {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+    }
+  }
+}
+
+.feature-pitch {
+  height: min-content;
+  padding-bottom: var(--se-padding);
+  padding-top: calc(var(--se-padding) / 2);
+}
+
+.analytics-container {
+  position: relative;
+  padding: var(--se-padding) 0px;
+
+  .feature,
+  .pitch-titles {
+    position: relative;
+    z-index: 2;
+    color: black;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+    content: "";
+    transform: skew(0deg, 3deg);
+    display: block;
+  }
+}
+
+.black {
+  padding: var(--se-padding) 0px;
+}
+
+@media screen and (max-width: 1600px) {
+  * {
+    --fs-big: 28px;
+    --fs-medium: 25px;
+    --fs-small: 18px;
+    --fs-x-small: 18px;
+
+    --fl-circle-radius: 50px;
+
+    --se-padding: 50px;
+  }
+
+  .intro-container {
+    height: calc(max(500px, 80vh));
+    background-image: url("./assets/StockGraph.svg");
+    background-position: top 0px left 0px;
+    background-size: calc(max(100%, 1000px)) auto;
+    .intro {
+      width: 300px;
+    }
+  }
+
+  .features {
+    .feature {
+      flex: 0 1 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .intro-container {
+    .intro {
+	  padding: 0px;
+	  text-align: center;
+	  margin: auto;
+	  padding-top: 50px;
+    }
+  }
+}
