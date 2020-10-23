@@ -2,6 +2,7 @@ import React from 'react';
 import './DemoPage.scss';
 
 import { Input, Button } from "../../Form";
+import { Link } from 'react-router-dom';
 
 /**
  *  Demo page component with mobile version
@@ -14,7 +15,7 @@ function DemoPage() {
         <p className="demo__page__message__description">
           Through the end of 2020, we are running a new user promotion of $1/room/month. Contact us to get started or checkout our demo.
           </p>
-        <Button className="contact-us" value="Contact Us" />
+        <Link to='/contact'>Contact Us</Link>
       </div>
 
       <div className="demo__page__form-card box form-card">
