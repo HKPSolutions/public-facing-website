@@ -10,7 +10,7 @@ function Footer() {
         <a href="/"><img src={Branding} alt="brand icon" /></a>
       </div>
       <div className="footer__info">
-        <p>**DEBUG 3** Improving hotel housekeeping by paying housekeepers by the quantity and quality of rooms cleaned</p>
+        <p>**DEBUG 4** Improving hotel housekeeping by paying housekeepers by the quantity and quality of rooms cleaned</p>
       </div>
       <div className="footer__nav footer__lists">
         <h2>Menu</h2>

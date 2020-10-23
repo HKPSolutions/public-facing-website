@@ -11,7 +11,7 @@ import Footer from '../Footer/Footer'
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter history={hashHistory} basename={process.env.PUBLIC_URL}>
       <NavBar />
       <div className="App">
         <Switch>
