@@ -3,7 +3,7 @@ import Feature from './Feature';
 
 function FeaturesPitch(props) {
     return (
-        <div className="black">
+        <div className="feature-pitch">
             <div className="pitch-container pitch-padding">
                 <div className="pitch-titles">
                     Improve housekeeping performance through increased responsibility and ownership

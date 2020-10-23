@@ -8,7 +8,7 @@ import "./HomePage.scss";
 class HomeView extends Component {
     render() {
         return (
-            <div>
+            <div className="home">
                 <IntroSection />
                 <FeaturesPitch />
                 <AnalyticsPitch />
