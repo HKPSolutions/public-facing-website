@@ -11,7 +11,7 @@ function Footer() {
         <Link to='/'><img src={Branding} alt="brand icon" /></Link>
       </div>
       <div className="footer__info">
-        <p>**DEBUG 6** Improving hotel housekeeping by paying housekeepers by the quantity and quality of rooms cleaned</p>
+        <p>Improving hotel housekeeping by paying housekeepers by the quantity and quality of rooms cleaned</p>
       </div>
       <div className="footer__nav footer__lists">
         <h2>Menu</h2>
