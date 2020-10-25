@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.scss';
 
 import Branding from './assets/branding.png'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <div className="footer">
       <div className="footer__branding">
-        <a href="/"><img src={Branding} alt="brand icon" /></a>
+        <Link to='/'><img src={Branding} alt="brand icon" /></Link>
       </div>
       <div className="footer__info">
         <p>Improving hotel housekeeping by paying housekeepers by the quantity and quality of rooms cleaned</p>
@@ -15,10 +16,10 @@ function Footer() {
       <div className="footer__nav footer__lists">
         <h2>Menu</h2>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/app">App</a></li>
-          <li><a href="/demo">Demo</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/app'>App</Link></li>
+          <li><Link to='/demo'>Demo</Link></li>
+          <li><Link to='/contact'>Contact</Link></li>
         </ul>
       </div>
       <div className="footer__contact-info footer__lists">
