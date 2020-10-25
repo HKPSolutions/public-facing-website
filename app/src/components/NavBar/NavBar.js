@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './style.scss';
 
 import Branding from './assets/brand.png'
@@ -17,15 +18,15 @@ function Navbar() {
                     <img alt="branding" src={Branding} />
                 </a>
             </div>
-            <a class={"toggle-menu " + (isMobileOpen ? " active" : "")} href="#" onClick={onClickHandler}>
+            <button class={"toggle-menu " + (isMobileOpen ? " active" : "")} onClick={onClickHandler}>
                 <i></i>
                 <i></i>
                 <i></i>
-            </a>
+            </button>
             <ul class={(isMobileOpen ? "open" : "close")}>
-                <li><a href="/app">app</a></li>
-                <li><a href="/demo">demo</a></li>
-                <li><a href="/contact">contact</a></li>
+                <li><Link to="/app">app</Link></li>
+                <li><Link to="/demo">demo</Link></li>
+                <li><Link to="/contact">contact</Link></li>
             </ul>
         </div>
     );

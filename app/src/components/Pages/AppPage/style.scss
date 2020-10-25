@@ -104,7 +104,6 @@ $bold: 500;
   position: relative;
 
   .chev-app-pg_hkui {
-    z-index: -3;
     position: relative;
     top: 0px;
     left: 0px;
@@ -112,7 +111,6 @@ $bold: 500;
   }
 
   .chev-app-pg_maui {
-    z-index: -2;
     position: relative;
     top: -10px;
     left: 0px;
@@ -120,7 +118,6 @@ $bold: 500;
   }
 
   .chev-app-pg_fdui {
-    z-index: -1;
     position: relative;
     top: -20px;
     left: 0px;
@@ -131,7 +128,7 @@ $bold: 500;
   .app-pg_maui,
   .app-pg_fdui {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     color: white;
 

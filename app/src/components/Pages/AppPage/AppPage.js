@@ -4,6 +4,7 @@ import './style.scss';
 import FrontDeskUIIMG from './assets/fdui.png';
 import MangerUIIMG from './assets/maui.png';
 import HousekeeperUIIMG from './assets/hkui.png';
+import { Link } from 'react-router-dom';
 
 function Section({ className, heading, count, desc, imgSrc, left = true }) {
   return (
@@ -32,7 +33,7 @@ function App() {
         <p className="app-pg_landing_sum">The app calculates the amount to be paid to each housekeeper based on the number of rooms cleaned, with a scaling factor from the customer cleanliness rating. The rate per room and scaling factor is customized by each individual hotel.</p>
         <div className="app-pg_landing_button">
           <button>Learn More</button>
-          <button >Sign Up</button>
+          <button><Link to='/demo'>Sign Up</Link></button>
         </div>
       </section>
       <Section

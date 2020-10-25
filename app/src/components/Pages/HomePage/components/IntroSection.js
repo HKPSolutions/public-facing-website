@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function IntroSection(props) {
     return (
@@ -12,7 +13,7 @@ function IntroSection(props) {
                 </div>
                 <div className="intro-buttons">
                     <a href="/demo">
-                        <button className="intro-button">Sign Up</button>
+                        <button className="intro-button"><Link to='/demo'>Sign Up</Link></button>
                     </a>
                     <a href="/app">
                         <button className="intro-button">Learn More</button>
