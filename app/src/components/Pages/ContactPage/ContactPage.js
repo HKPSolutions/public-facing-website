@@ -16,8 +16,8 @@ function ContactPage() {
           <h1 className="contact-us__message__title">Contact Us!</h1>
           <p className="contact-us__message__decription">Our team is happy to answer any questions you may have. Feel free to reach out!</p>
           <div className="social-icons">
-            <a href="!#"><img className="linkedin-icon" src={linkedin} alt="linkedin-icon"/></a>
-            <a href="!#"><img className="email-icon" src={Email} alt="email-icon"/></a>
+            <a href="https://linkedin.com/company/hkp-solutions"><img className="linkedin-icon" src={linkedin} alt="linkedin-icon"/></a>
+            <a href="mailto:info@hkpsolutions.com"><img className="email-icon" src={Email} alt="email-icon"/></a>
           </div>
         </div>
 
