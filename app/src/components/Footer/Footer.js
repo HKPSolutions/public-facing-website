@@ -1,15 +1,11 @@
 import React from 'react';
 import './Footer.scss';
 
-import Branding from './assets/branding.png'
 import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <div className="footer">
-      <div className="footer__branding">
-        <Link to='/'><img src={Branding} alt="brand icon" /></Link>
-      </div>
       <div className="footer__info">
         <p>Improving hotel housekeeping by paying housekeepers by the quantity and quality of rooms cleaned</p>
       </div>
@@ -25,7 +21,7 @@ function Footer() {
       <div className="footer__contact-info footer__lists">
         <h2>Contact</h2>
         <ul>
-          <li>Email: <a href="mailto:hkpsolutions@gmail.com">hkpsolutions@gmail.com</a></li>
+          <li>Email: <a href="mailto:info@hkpsolutions.com">info@hkpsolutions.com</a></li>
         </ul>
       </div>
       <div className="footer__social footer__lists">
