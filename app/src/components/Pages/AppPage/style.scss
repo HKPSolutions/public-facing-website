@@ -146,9 +146,8 @@ $bold: 500;
   overflow: hidden;
 
   .end{
-    z-index: -4;
     position: absolute;
-    bottom: -100px;
+    bottom: -300px;
     left: 0px;
 
     width: 100vw;
@@ -157,10 +156,20 @@ $bold: 500;
   }
 
   .app-pg_landing {
-    height: 350px;
+    height: max-content;
     width: 40%;
     margin: auto;
     text-align: center;
+
+    padding-bottom: 70px;
+  }
+
+  .app-pg_landing_title{
+    font-size: var(--fs-ff-big);
+  }
+
+  .app-pg_landing_sum{
+    font-size: 30px;
   }
 
   .app-pg_landing_sum{
@@ -208,6 +217,7 @@ $bold: 500;
     border: none;
     margin-right: 20px;
     width: fit-content;
+    font-size: calc(var(--fs-ff-medium) / 2);
 
     &:focus {
       outline: none;
@@ -263,7 +273,6 @@ $bold: 500;
 @media screen and (max-width: 615px) {
   .app-pg {
     .app-pg_landing {
-      height: 250px;
       width: 90%;
       text-align: center;
     }

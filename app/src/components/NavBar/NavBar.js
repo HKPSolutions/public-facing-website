@@ -1,12 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './style.scss';
+import { useLocation } from "react-router-dom";
 
 import Branding from './assets/brand.png'
 
 function Navbar() {
     const [isMobileOpen, setOpen] = React.useState(false);
+    let location = useLocation();
 
+    function selectedClassName(name){
+        if (name === location.pathname.substr(1))
+            return "selected-nav-button";
+    }
+    
     function onClickHandler() {
         setOpen((old) => !old);
     }
@@ -18,15 +25,15 @@ function Navbar() {
                     <img alt="branding" src={Branding} />
                 </a>
             </div>
-            <button class={"toggle-menu " + (isMobileOpen ? " active" : "")} onClick={onClickHandler}>
+            <button className={"toggle-menu " + (isMobileOpen ? " active" : "")} onClick={onClickHandler}>
                 <i></i>
                 <i></i>
                 <i></i>
             </button>
-            <ul class={(isMobileOpen ? "open" : "close")}>
-                <li><Link to="/app">app</Link></li>
-                <li><Link to="/demo">demo</Link></li>
-                <li><Link to="/contact">contact</Link></li>
+            <ul className={(isMobileOpen ? "open" : "close")}>
+                <li className={selectedClassName("app")}><Link to="/app">app</Link></li>
+                <li className={selectedClassName("demo")}><Link to="/demo">demo</Link></li>
+                <li className={selectedClassName("contact")}><Link to="/contact">contact</Link></li>
             </ul>
         </div>
     );
