@@ -12,12 +12,8 @@ function IntroSection(props) {
                     Improving hotel housekeeping by paying housekeepers by the quantity and quality of rooms cleaned
                 </div>
                 <div className="intro-buttons">
-                    <a href="/demo">
-                        <button className="intro-button"><Link to='/demo'>Sign Up</Link></button>
-                    </a>
-                    <a href="/app">
-                        <button className="intro-button">Learn More</button>
-                    </a>
+                    <Link to='/demo'><button className="intro-button">Sign Up</button></Link>
+                    <Link to='/app'><button className="intro-button">Learn More</button></Link>
                 </div>
             </div>
         </div>

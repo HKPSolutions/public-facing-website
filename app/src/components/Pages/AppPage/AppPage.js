@@ -32,8 +32,7 @@ function App() {
         <h1 className="app-pg_landing_title">How Our App Works</h1>
         <p className="app-pg_landing_sum">The app calculates the amount to be paid to each housekeeper based on the number of rooms cleaned, with a scaling factor from the customer cleanliness rating. The rate per room and scaling factor is customized by each individual hotel.</p>
         <div className="app-pg_landing_button">
-          <button>Learn More</button>
-          <button><Link to='/demo'>Sign Up</Link></button>
+          <Link to='/demo'><button>Sign Up</button></Link>
         </div>
       </section>
       <Section
