@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - feature/emailjs
 jobs:
   deploy:
     runs-on: ubuntu-latest
