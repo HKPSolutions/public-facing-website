@@ -24,9 +24,9 @@ function Navbar() {
                 <i></i>
             </button>
             <ul className={(isMobileOpen ? "open" : "close")}>
-                <li><Link to="/app">app</Link></li>
-                <li><Link to="/demo">demo</Link></li>
-                <li><Link to="/contact">contact</Link></li>
+                <li className={selectedClassName("app")}><Link to="/app">app</Link></li>
+                <li className={selectedClassName("demo")}><Link to="/demo">demo</Link></li>
+                <li className={selectedClassName("contact")}><Link to="/contact">contact</Link></li>
             </ul>
         </div>
     );
