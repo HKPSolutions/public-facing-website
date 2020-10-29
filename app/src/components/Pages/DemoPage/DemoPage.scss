@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-// rests
-* {
-  padding: 0;
-  margin: 0;
-}
-
 // background
 .demo__page {
   background-image: url("./assets/bg.svg");
@@ -14,6 +8,33 @@
   background-size: 100vw auto;
   background-position: top 400px right 0px;
   background-repeat: no-repeat;
+
+  #{&}__message {
+    button {
+      background-color: #f45b69;
+      color: white;
+      border-radius: 3px;
+      text-transform: uppercase;
+      padding: 10px;
+      border: none;
+      margin-right: 20px;
+      width: fit-content;
+      font-size: calc(var(--fs-ff-medium) / 2);
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+
+      &:hover {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+    }
+  }
 }
 
 .demo__page {
@@ -35,7 +56,7 @@
       margin: 5px;
     }
 
-    .demo__page__message{
+    .demo__page__message {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -45,28 +66,28 @@
     }
   }
 
-  h1{
-    font-family: 'Roboto', sans-serif;
+  h1 {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 55px;
+    font-size: var(--fs-ff-big);
 
     text-transform: capitalize;
 
     margin-bottom: 20px;
   }
 
-  p{
-    font-family: 'Roboto', sans-serif;
+  p {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
+    font-size: var(--fs-ff-medium);
 
     margin-bottom: 20px;
   }
 
-  h2{
-    font-family: 'Roboto', sans-serif;
+  h2 {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -74,11 +95,11 @@
     margin-bottom: 10px;
   }
 
-  hr{
+  hr {
     margin-bottom: 20px;
   }
 
-  input[type="submit"].contact-us{
+  input[type="submit"].contact-us {
     width: 200px;
     text-transform: capitalize;
   }

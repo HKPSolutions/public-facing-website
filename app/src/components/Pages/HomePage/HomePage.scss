@@ -71,6 +71,7 @@ $bold: 500;
   font-size: var(--fs-medium);
   font-weight: $bold;
   padding-bottom: 100px;
+  text-transform: capitalize;
 }
 
 .intro-container {
@@ -92,16 +93,16 @@ $bold: 500;
     width: 700px;
 
     .intro-header {
-      font-size: 3.5rem;
+      font-size: var(--fs-big);
       width: 70vw;
-      overflow:visible;
+      overflow: visible;
       font-weight: $bold;
       padding-bottom: 20px;
     }
 
     .intro-desc {
       padding-bottom: 40px;
-      font-size: 2rem;
+      font-size: var(--fs-medium);
       width: 40vw;
     }
 
@@ -112,7 +113,6 @@ $bold: 500;
       text-transform: uppercase;
       padding: 10px;
       cursor: pointer;
-      
 
       font-size: var(--fs-x-small);
       text-transform: capitalize;
@@ -173,7 +173,7 @@ $bold: 500;
 
 @media screen and (max-width: 1600px) {
   * {
-    --fs-big: 28px;
+    --fs-big: 50px;
     --fs-medium: 25px;
     --fs-small: 18px;
     --fs-x-small: 18px;
@@ -184,10 +184,10 @@ $bold: 500;
   }
 
   .intro-container {
-    height: calc(max(500px, 80vh));
+    height: calc(max(500px, 90vh));
     background-image: url("./assets/StockGraph.svg");
     background-position: top 0px left 0px;
-    background-size: calc(max(100%, 1000px)) auto;
+    background-size: calc(max(100%, 1200px)) auto;
     .intro {
       width: 300px;
     }
@@ -200,13 +200,35 @@ $bold: 500;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 830px) {
+  * {
+    --fs-big: 28px;
+    --fs-medium: 25px;
+    --fs-small: 18px;
+    --fs-x-small: 18px;
+
+    --fl-circle-radius: 50px;
+
+    --se-padding: 200px;
+  }
+
   .intro-container {
     .intro {
-	  padding: 0px;
-	  text-align: center;
-	  margin: auto;
-	  padding-top: 50px;
+      padding: 0px;
+      text-align: center;
+      margin: auto;
+      padding-top: 50px;
+
+      .intro-header{
+        padding: 0px;
+        width: 100%;
+      }
+
+      .intro-desc{
+        padding: 0px;
+        width: 100%;
+        padding-bottom: 30px;
+      }
     }
   }
 }

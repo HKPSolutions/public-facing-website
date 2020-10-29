@@ -15,7 +15,7 @@ function DemoPage() {
         <p className="demo__page__message__description">
           Through the end of 2020, we are running a new user promotion of $1/room/month. Contact us to get started or checkout our demo.
           </p>
-        <Link to='/contact'>Contact Us</Link>
+        <Link to='/contact'><button>Contact Us</button></Link>
       </div>
 
       <div className="demo__page__form-card box form-card">

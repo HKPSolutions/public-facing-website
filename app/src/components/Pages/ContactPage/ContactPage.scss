@@ -4,6 +4,19 @@
 * {
   padding: 0;
   margin: 0;
+
+  --fs-ff-big: 50px;
+  --fs-ff-medium: 30px;
+}
+
+@media screen and (max-width: 450px){
+  * {
+    padding: 0;
+    margin: 0;
+  
+    --fs-ff-big: 35px;
+    --fs-ff-medium: 18px;
+  }
 }
 
 // background
@@ -91,14 +104,14 @@
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
+    font-size:var(--fs-ff-big);
   }
 
   #{&}__decription {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
+    font-size: var(--fs-ff-medium);
 
     padding-bottom: 35px;
   }

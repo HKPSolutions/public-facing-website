@@ -12,13 +12,20 @@
   font-size: 18px;
   margin: auto;
 
+  .selected-nav-button {
+    a {
+      font-weight: 400;
+      opacity: 1;
+    }
+  }
+
   ul {
     display: flex;
     justify-content: space-between;
     align-self: stretch;
     align-items: stretch;
     list-style: none;
-    width: 40%;
+    width: 50%;
 
     a {
       text-transform: capitalize;
@@ -27,6 +34,11 @@
       place-items: center;
       text-decoration-color: transparent;
       color: black;
+      opacity: 0.5;
+
+      &:hover{
+        opacity: 1;
+      }
     }
   }
 }
@@ -42,17 +54,15 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto;
     justify-content: stretch;
-    width: 100%;
     height: min-content;
-    gap: 60px;
 
     .navbar-branding {
-        padding-left: 30px;
+      padding-left: 30px;
     }
 
     .toggle-menu {
@@ -61,6 +71,7 @@
       width: 30px;
       height: 16px;
       padding-left: 30px;
+      cursor: pointer;
 
       i {
         position: absolute;
@@ -104,26 +115,25 @@
       }
     }
 
-    .close{
-        display: none;
+    .close {
+      display: none;
     }
 
     .open {
-        display: flex;
-        flex-direction: column;
-        grid-column: 1 / 3;
-        padding: 0px;
-        margin: 0px;
-        width: 100%;
-        gap: 30px;
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / 3;
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      gap: 30px;
 
-        li{
-            a{
-                justify-self: stretch;
-                font-size: 48px;
-                font-weight: 200;
-            }
+      li {
+        a {
+          justify-self: stretch;
+          font-size: 48px;
         }
+      }
     }
   }
 }
