@@ -48,6 +48,8 @@ function useAlert() {
         break;
       case 3:
         setClass("alert alert_sending");
+      default:
+        setClass("alert alert_h")
     }
 
     setMessage(message);
