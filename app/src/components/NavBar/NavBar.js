@@ -18,12 +18,12 @@ function Navbar() {
                     <img alt="branding" src={Branding} />
                 </a>
             </div>
-            <button class={"toggle-menu " + (isMobileOpen ? " active" : "")} onClick={onClickHandler}>
+            <button className={"toggle-menu " + (isMobileOpen ? " active" : "")} onClick={onClickHandler}>
                 <i></i>
                 <i></i>
                 <i></i>
             </button>
-            <ul class={(isMobileOpen ? "open" : "close")}>
+            <ul className={(isMobileOpen ? "open" : "close")}>
                 <li><Link to="/app">app</Link></li>
                 <li><Link to="/demo">demo</Link></li>
                 <li><Link to="/contact">contact</Link></li>

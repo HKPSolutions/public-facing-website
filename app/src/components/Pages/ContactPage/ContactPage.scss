@@ -45,12 +45,12 @@
         margin: 2px;
       }
 
-      .contact-us__message{
+      .contact-us__message {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-  
+
         margin: 0px 20px 50px 20px;
       }
     }
@@ -136,4 +136,40 @@ textarea {
   .form-input-item {
     margin-bottom: 25px;
   }
+}
+
+// alerts
+.alert {
+  margin: 20px 0px 0px 0px;
+  align-self: stretch;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  border: white solid 1px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.alert_s {
+  background-color: #dff0d8;
+  border-color: #d0e9c6;
+  color: #3c763d;
+}
+
+.alert_f {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebcccc;
+}
+
+.alert_sending {
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #31708f;
+}
+
+.alert_h {
+  display: none;
 }
