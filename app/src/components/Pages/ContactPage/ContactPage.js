@@ -98,7 +98,7 @@ function ContactPage() {
         <div className="form-card__info box form-card">
           <Input label="full name" value={getValue("fullName")} onChange={onValueChange("fullName")} type="text" id="full_name" name="fullName" />
           <Input label="email" value={getValue("email")} onChange={onValueChange("email")} type="email" id="email" name="email" placeholder="you@example.com" />
-          <Input label="phone number" value={getValue("phoneNumber")} onChange={onValueChange("phoneNumber")} type="tel" id="phone_number" name="phoneNumber" pattern="[0-9]{10}" placeholder="+(000) 000-0000" />
+          <Input label="phone number" value={getValue("phoneNumber")} onChange={onValueChange("phoneNumber")} type="tel" id="phone_number" name="phoneNumber" placeholder="+(000) 000-0000" />
           <Input label="name of hotel" value={getValue("hotelName")} onChange={onValueChange("hotelName")} type="text" id="hotel_name" name="hotelName" />
           <Input label="hotel position" value={getValue("hotelPosition")} onChange={onValueChange("hotelPosition")} type="text" id="hotel_position" name="hotelPosition" />
         </div>
